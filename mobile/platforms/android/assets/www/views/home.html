@@ -1,4 +1,6 @@
-<button camera ng-model='myPicture'>Take Picture</button>
+<div class="scrollable">
+ <div class="scrollable-content section">
+<button class="btn btn-primary btn-block" camera ng-model='myPicture'>Take Picture</button>
 
 <ul ng-repeat="onepic in myPictures">
     <li style="list-style: none">
@@ -9,3 +11,6 @@
                   alt="error"/>
     </li>
 </ul>
+
+<hr/>
+     <button class="btn btn-primary btn-block" ng-model="myVideo" video>capture video</button>

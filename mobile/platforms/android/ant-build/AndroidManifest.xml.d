@@ -1,2 +1,2 @@
-C:\Development\vubaApp\mobile\platforms\android\ant-build\AndroidManifest.xml : \
-C:\Development\vubaApp\mobile\platforms\android\AndroidManifest.xml \
+c:\Development\vubaApp\mobile\platforms\android\ant-build\AndroidManifest.xml : \
+c:\Development\vubaApp\mobile\platforms\android\AndroidManifest.xml \
