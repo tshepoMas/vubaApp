@@ -1,0 +1,38 @@
+
+
+<div class="scrollable">
+  <div class="scrollable-content">
+      <div class="btn-group justified nav-tabs">
+          <a class="btn">Step 1</a>
+          <a class="btn">Step 2</a>
+          <a class="btn">Step 3</a>
+        </div>
+    <div ng-include="'views/partials/instructions.html'"></div>
+    <hr/>
+
+    <p>
+        <span>What industry are you working in?</span>
+    </p>  
+    <div class="btn-group pull-right">
+            <a ui-turn-on='myDropdown' class='btn'>
+              <i class="fa fa-ellipsis-v"></i>
+            </a>
+            <ul 
+              class="dropdown-menu"
+              ui-outer-click="Ui.turnOff('myDropdown')"
+              ui-outer-click-if="Ui.active('myDropdown')"
+              role="menu"
+              ui-show="myDropdown" 
+              ui-state="myDropdown"
+              ui-turn-off="myDropdown">
+
+              <li><a>Computer Science</a></li>
+              <li><a>Commerce</a></li>
+              <li><a>Engineering</a></li>
+              <li><a>Arts</a></li>
+              <li><a>Sales</a></li>
+              <li><a>Medicine</a></li>
+            </ul>
+      </div>
+  </div>
+</div>

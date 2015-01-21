@@ -1,12 +1,17 @@
 angular.module('Vuba.mobile.controllers.Main', [])
 
-.controller('MainController', function($scope, $rootScope){
+.controller('MainController', function($scope, $location, $rootScope){
     $scope.myPictures = [];
     $scope.$watch('myPicture', function(value) {
         if (value) {
             $scope.myPictures.push(value);
         }
     }, true);
+    
+    $scope.go = function(view)
+    {
+        $location.path('/' + view);  
+    };
     
     $scope.show = function(){
         navigator.geolocation.getCurrentPosition(onSuccess, onError, {timeout: 10000, enableHighAccuracy: true});

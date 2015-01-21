@@ -14,6 +14,22 @@ angular.module('Vuba.mobile', [
         templateUrl: 'views/home.html', 
        controller: 'MainController'
     })
+    .when('/about', {
+        templateUrl: 'views/about.html', 
+        controller: 'MainController'
+    })
+    .when('/stepone', {
+        templateUrl: 'views/stepone.html', 
+        controller: 'MainController'
+    })
+    .when('/steptwo', {
+        templateUrl: 'views/steptwo.html', 
+        controller: 'MainController'
+    })
+    .when('/record', {
+        templateUrl: 'views/record.html', 
+        controller: 'MainController'
+    })
     .when('/search', {
         templateUrl: 'views/search.html', 
         controller: 'SearchController'
